@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import java.util.List;
 
-@FeignClient(value = "pythonadapter", url = "http://localhost:8000/")
+@FeignClient(value = "pythonadapter", url = "http://0.0.0.0:8000/")
 public interface WalletAdapter {
 
     @GetMapping(value = "/get_profile_info")
